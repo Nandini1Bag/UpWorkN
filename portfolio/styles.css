@@ -130,7 +130,7 @@
     font-weight: 400;
   }
   .card img {
-    width: 50px;
+    width: 100%;
     background: white;
   }
   section.services .card-grid {
@@ -218,5 +218,29 @@
   .btn-secondary:hover {
     background: var(--primary);
     color: var(--secondary);
+  }
+  .anchor-text{
+    text-decoration: none;
+  }
+  .workLink{
+    padding: 2px;
+    font-size: 1.1rem;
+  }
+
+  .work-img {
+    display: block;
+    overflow: hidden;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .w-title {
+    font-size: 1.2rem;
+  }
+  
+
+  .work-content {
+    padding: 2rem 3% 1rem 4%;
   }
   
