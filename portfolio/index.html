@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src='main.js'></script>
+    
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     </head>
@@ -19,7 +20,7 @@
                <div>  
                 <nav>
                   <a href="#Home">Home</a>  
-                  <a href="#About">About</a>  
+                  <a href="#AboutMe">About</a>  
                   <a href="#Projects">Projects</a> 
                   <a href="#Contact">Contact</a> 
                 </nav> 
@@ -36,26 +37,26 @@
            </nav>
          </div>  
        </header>
-       <div class="hero flex items-centre justify-between">
-        <div class="left flex-1 justify-center">
-        <img src="./images/main-img.JPG" alt="Profile">
-        </div>
-        <div class="right flex-1">
-        <h6>Nandini Bag</h6>
-        <h1>I'm a Web<br> <span>Developer</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illum nam nobis, minima
-        laudantium fugit sequi nostrum quod impedit, beatae necessitatibus praesentium optio labore
-        nemo!</p>
-        <div>
-        <!-- <button class="btn btn-secondary">DOWNLOAD CV</button> -->
-        <div>
-          <a rel="hover" download="" href="assets/Nandini_CVU.docx" class="btn btn-secondary anchor-text">DOWNLOAD CV</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <section class="about">
-          <div id="About">
+       <!-- Home section -->
+       <section id="Home" class="hero">
+        <div class="container flex items-centre justify-between">
+          <div class="left flex-1 justify-right">
+          <img src="./images/main-img.JPG" alt="Profile">
+          </div>
+          <div class="right flex-1">
+          <h6>Nandini Bag</h6>
+            <h1>I'm a Web<br><span>Developer</span></h1>
+          <p>6+ Years of extensive IT experience which includes the experience in designing User Interface (UI) applications and professional web applications using HTML 4.0/5, XHTML, CSS2/CSS3, JAVASCRIPT, Bootstrap, React JS, ES6, JSON and XML.</p>
+          <div>
+          <div>
+            <a rel="hover" download="" href="assets/Nandini_CVU.docx" class="btn btn-secondary anchor-text">DOWNLOAD CV</a>
+          </div>
+          </div>
+          </div>
+          </div>
+       </section>
+<!-- About Me section -->
+        <section id="AboutMe" class="about">
             <div class="container flex items-centre">
               <div class="left flex-1 justify-right">
               <img src="./images/main3.jpeg" height="400px" alt="profile pic">
@@ -71,7 +72,6 @@
                   <li><a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in" ></i></a></li>
                   <li><a href="https://codepen.io/nandini1bag" target="blank"><i class="fab fa-codepen"></i></a></li> 
               </ul>
-              </div>
               </div>
               </div>
           </div>
@@ -115,53 +115,20 @@
                       <a href="https://air-bnb-exp-clone.netlify.app/" target="_blank"> <span class="liveTxt">Live</span></a>
                       <a href="https://github.com/Nandini1Bag/AirbnbClone" target="_blank"><span class="liveTxt">Github</span></a>
                     </div>        
-             
-               </div>
-                   
+                  </div>  
                 </div>
-              
-               <!-- <div class="work-content">
-                <div class="w-title">
-                  <h2>Air-bnb Clone</h2>
-                  <span>Air-bnb-exp-clone is a clone of the Airbnb Experiences.Users can discover and book unique experiences hosted by Local Experts.</span>
-                </div>
-                <div class="workLink">
-                  <a href="https://air-bnb-exp-clone.netlify.app/" target="_blank"> <span class="liveTxt">Live</span></a>
-                  <a href="https://github.com/Nandini1Bag/AirbnbClone" target="_blank"><span class="liveTxt">Github</span></a>
-                </div>
-                </div> -->
-            
-                
-            
-                <!-- <div class="card">
-                <img src="./images/Chrome-momentum.png">
-                <h2>Chrome-momentum-extension</h2>
-                <p> <span>Chrome-Mom-Extension is a clone of the chrome-momentum.</span></p>
-                <div class="workLink">
-                  <a href="https://chrome-momentum.netlify.app/" target="_blank"> <span class="liveTxt">Live</span></a>
-                  <a href="https://github.com/Nandini1Bag/Chrome-Mom-Extension" target="_blank"><span class="liveTxt">Github</span></a>
-                </div>
-                </div>
-                <div class="card">
-                <img src="./images/Chrome-momentum.png">
-                <h2>Content Writing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
-                </div>
-                </div>
-                </div> -->
               </div>
                 </section>
 
-                <section class="Contact_section">
-                  <div id="Contact">
+                <section id="Contact" class="Contact_section">
                     <h1 class="section_header">Contact <span>Me</span></h1>
                   <div class="FormContent">
-                    <form action="/action_page.php">
+                    <form id="myForm">
                       <label for="fname">Name :</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name..">
                   
                       <label>Your Email <i>(required)</i> :</label>
-                      <input type="text" name="emailid" placeholder="Your Emailid.." maxlength="75" ></input>
+                      <input type="text" id="emailid" name="email" placeholder="Your Emailid.." maxlength="75" ></input>
                   
                        <label>Message <i>(required)</i> :</label>
                        <textarea placeholder="Remember, be nice!" cols="20" rows="5"></textarea>
@@ -169,7 +136,6 @@
                       <input type="submit" value="Send Message">
                     </form>
                   </div>
-                </div>
                 </section>
 
                 <footer>
